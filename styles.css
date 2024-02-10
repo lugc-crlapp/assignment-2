@@ -1,0 +1,71 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background: #000;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+#waveform {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+/* Base lyric styles */
+.lyrics {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: all 0.5s ease;
+    font-size: 2em;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Emotion and style classes */
+.love { color: pink; font-family: 'Cursive'; }
+.anger { color: darkred; font-weight: bold; text-transform: uppercase; }
+.sorrow { color: darkslateblue; font-style: italic; }
+.joy { color: gold; font-family: 'Comic Sans MS', cursive, sans-serif; }
+.confusion { color: lightgrey; font-family: 'Garamond', serif; }
+.excitement { color: tomato; font-family: 'Verdana', sans-serif; animation: pulse 1s infinite; }
+.relief { color: lightgreen; font-family: 'Tahoma', sans-serif; }
+.nostalgia { color: tan; font-family: 'Times New Roman', Times, serif; }
+.hope { color: lightyellow; font-family: 'Georgia', serif; }
+.fear { color: black; background-color: grey; }
+.anticipation { color: slateblue; font-family: 'Arial', sans-serif; }
+.surprise { color: violet; font-size: 3em; }
+.disgust { color: olive; font-family: 'Courier New', Courier, monospace; }
+.trust { color: deepskyblue; font-family: 'Lucida Console', 'Courier New', monospace; }
+.neutrality { color: white; font-family: 'Helvetica', sans-serif; }
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+
+button {
+    position: fixed;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #444;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #666;
+}
